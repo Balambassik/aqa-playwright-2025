@@ -1,0 +1,24 @@
+{
+  "name": "aqa-playwright-2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Balambassik/aqa-playwright-2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Balambassik/aqa-playwright-2025/issues"
+  },
+  "homepage": "https://github.com/Balambassik/aqa-playwright-2025#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3"
+  }
+}
