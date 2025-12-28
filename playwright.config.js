@@ -14,7 +14,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   // testDir: './tests',
-  testMatch: /\/test\/.*\.spec\.js/,
+  testMatch: /tests\/.*\.spec\.js/,
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -31,7 +31,7 @@ export default defineConfig({
     baseURL: 'https://qauto.forstudy.space/',
     httpCredentials: {
       username: "guest",
-      password: "welcome2quato"
+      password: "welcome2qauto"
     },
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
