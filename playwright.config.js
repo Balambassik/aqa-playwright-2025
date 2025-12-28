@@ -1,6 +1,10 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
-
+import dotenv from 'dotenv';
+dotenv.config();
+const BASE_URL = process.env.BASE_URL;
+const HTTP_USERNAME = process.env.HTTP_USERNAME;
+const HTTP_PASSWORD = process.env.HTTP_PASSWORD;
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -28,10 +32,10 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    baseURL: 'https://qauto.forstudy.space/',
+    baseURL: BASE_URL,
     httpCredentials: {
-      username: "guest",
-      password: "welcome2qauto"
+      username: String(process.env.HTTP_USERNAME),
+      password: String(process.env.HTTP_PASSWORD)
     },
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
